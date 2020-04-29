@@ -90,3 +90,5 @@ $backdrop_headerbar_bg_color: lighten($headerbar_bg_color, 5%);
 $backdrop_headerbar_fg_color: mix($headerbar_fg_color, $headerbar_bg_color, 70%);
 $backdrop_headerbar_text_color: mix($headerbar_text_color, $backdrop_headerbar_bg_color, 70%);
 $backdrop_headerbar_insensitive_color: mix($headerbar_fg_color, $backdrop_headerbar_bg_color, 70%);
+
+$headerbar_bg_color_alt: mix($orange, $headerbar_bg_color);

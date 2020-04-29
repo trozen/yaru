@@ -7,7 +7,7 @@ $_backdrop_button_border_color: darken($inkstone, 9%);
 // overwriting the headerbar styling from common, for the inverted look in the ambiance theme
 headerbar,
 .titlebar {
-  @include headerbar_fill($headerbar_bg_color, $hc: $headerbar_border_color);
+  @include headerbar_fill($headerbar_bg_color_alt, $hc: $headerbar_border_color);
   color: $headerbar_fg_color;
   border-color: darken($headerbar_bg_color, 7%);
 
