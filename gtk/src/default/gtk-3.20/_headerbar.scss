@@ -1,5 +1,5 @@
 // Color variables dependant on $headerbar_bg_color defined in _colors.scss
-$_button_bg_color: lighten($headerbar_bg_color, 7.5%);
+$_button_bg_color: lighten($headerbar_bg_color_alt, 7.5%);
 $_button_border_color: darken($headerbar_bg_color, 9%);
 // deducted from the color used in common which is $backdrop_borders_color: mix($borders_color, $bg_color, 80%);
 $_backdrop_button_border_color: darken($inkstone, 9%);
@@ -91,12 +91,12 @@ headerbar,
     }
 
     &:disabled {
-      @include button(insensitive, if($variant=='light', darken($headerbar_bg_color, 9%), $headerbar_bg_color), $headerbar_fg_color);
+      @include button(insensitive, if($variant=='light', darken($headerbar_bg_color_alt, 9%), $headerbar_bg_color_alt), $headerbar_fg_color);
       border-color: darken($headerbar_bg_color, 6%);
 
       &:active,
       &:checked {
-        @include button(insensitive-active, $headerbar_bg_color, $headerbar_fg_color);
+        @include button(insensitive-active, $headerbar_bg_color_alt, $headerbar_fg_color);
       }
     }
 
